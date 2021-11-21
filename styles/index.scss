@@ -1,3 +1,12 @@
+@import "breakpoints.scss";
+@import "common.scss";
+@import "header.scss";
+@import "headline.scss";
+@import "about.scss";
+@import "customers.scss";
+@import "features-desktop.scss";
+@import "features-mobile.scss";
+@import "footer.scss";
 * {
     box-sizing: border-box;
 }
