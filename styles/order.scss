@@ -51,7 +51,7 @@
         font-size: 18px;
         line-height: 13px;
         &::placeholder {
-            color: #2b292d;
+            color: $text-color;
         }
         @include for-large-up {
             margin: 0;

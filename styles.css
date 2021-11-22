@@ -26,26 +26,23 @@
 }
 @media screen and (min-width: 1400px) {
   .top-section {
-    background-color: #f3c6bd;
     padding-top: 39px;
   }
 }
 
 .header {
   height: 64px;
-  width: 100%;
+  width: 100vw;
   background-color: #fff;
   display: flex;
   align-items: center;
-  padding-left: 15px;
 }
 @media screen and (min-width: 1400px) {
   .header {
-    background-color: #f3c6bd;
     width: 1140px;
     height: 62px;
+    background-color: #f3c6bd;
     margin: auto;
-    display: flex;
   }
 }
 .header__button {
@@ -67,6 +64,7 @@
 @media screen and (min-width: 1400px) {
   .header__menu-button {
     display: none;
+    background: #f3c6bd;
   }
 }
 .header__menu-button-icon {
@@ -115,6 +113,7 @@
 
 .logo {
   display: flex;
+  padding-left: 15px;
 }
 .logo__image {
   width: 48px;
@@ -623,7 +622,6 @@
 }
 .footer-navigation__item {
   text-decoration: none;
-  color: #2b292d;
   opacity: 0.6;
   font-size: 14px;
   margin-right: 22px;
@@ -634,7 +632,6 @@
   font-size: 18px;
   width: 360px;
   opacity: 0.6;
-  color: #2b292d;
   margin-top: 26px;
 }
 @media screen and (min-width: 1400px) {
@@ -809,7 +806,7 @@ body {
 }
 @media screen and (min-width: 1400px) {
   .page {
-    width: max-1400px;
+    width: max- 1400px;
     margin: auto;
     min-height: 100vh;
     display: flex;

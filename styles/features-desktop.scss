@@ -1,14 +1,14 @@
 .features {
     display: flex;
     margin: auto;
-    width: 1400px;
+    width: $page-width;
     position: relative;
     margin-bottom: 103px;
     @include for-large-down {
         display: none;
     }
     &__content {
-        width: 1140px;
+        width: $content-width;
         display: flex;
         margin: auto;
     }
