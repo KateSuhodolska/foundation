@@ -1,0 +1,86 @@
+.inbox {
+    width: 100vw;
+    background-color: rgba($color: #fcf0e3, $alpha: 0.4);
+    padding: 50px 15px 48px 15px;
+    @include for-large-up {
+        display: flex;
+    }
+    &__figure {
+        @include for-large-up {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    &__img {
+        margin: auto;
+        max-width: 100%;
+    }
+    &__caption {
+        display: none;
+        @include for-large-up {
+            display: block;
+            font-size: 14px;
+            line-height: 22px;
+            text-align: center;
+            color: rgba(43, 41, 45, 0.6);
+        }
+    }
+    &__subtitle {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 34px;
+        color: #f1592b;
+        margin: 0;
+        margin-top: 32px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: -0.357143px;
+        color: #2b292d;
+        margin: 0;
+        margin-top: 17px;
+    }
+    &__text {
+        font-size: 24px;
+        line-height: 34px;
+        color: #2b292d;
+        margin-bottom: 30px;
+    }
+}
+
+.review {
+    padding: 30px 20px;
+    border-bottom: 4px solid #0185d0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 1e-5) 100%), #ffffff;
+    background-blend-mode: overlay, normal;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
+    &__description {
+        font-size: 20px;
+        line-height: 28px;
+        color: #2b292d;
+    }
+    &__comment {
+        display: flex;
+        align-items: center;
+    }
+    &__autor__avatar {
+        margin-top: 28px;
+    }
+    &__autor__info {
+        margin-top: 26px;
+        margin-left: 11px;
+        font-size: 16px;
+        line-height: 22px;
+        color: #2b292d;
+    }
+    &__comment__info-name {
+        margin: 0;
+        font-weight: 700;
+    }
+    &__comment__info-post {
+        opacity: 0.6;
+    }
+}
