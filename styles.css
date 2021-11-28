@@ -508,13 +508,15 @@
 }
 
 .inbox {
-  width: 100vw;
+  width: 100%;
+  margin: auto;
   background-color: rgba(252, 240, 227, 0.4);
   padding: 50px 15px 48px 15px;
 }
 @media screen and (min-width: 1400px) {
   .inbox {
     display: flex;
+    padding: 0;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -522,6 +524,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 142px 0 101px 193px;
   }
 }
 .inbox__img {
@@ -534,10 +537,20 @@
 @media screen and (min-width: 1400px) {
   .inbox__caption {
     display: block;
+    margin-top: 15px;
     font-size: 14px;
     line-height: 22px;
     text-align: center;
     color: rgba(43, 41, 45, 0.6);
+  }
+}
+@media screen and (min-width: 1400px) {
+  .inbox__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 130px;
   }
 }
 .inbox__subtitle {
@@ -548,6 +561,11 @@
   margin: 0;
   margin-top: 32px;
 }
+@media screen and (min-width: 1400px) {
+  .inbox__subtitle {
+    margin-top: 0;
+  }
+}
 .inbox__title {
   font-weight: 700;
   font-size: 40px;
@@ -557,11 +575,23 @@
   margin: 0;
   margin-top: 17px;
 }
+@media screen and (min-width: 1400px) {
+  .inbox__title {
+    margin-top: 24px;
+  }
+}
 .inbox__text {
   font-size: 24px;
   line-height: 34px;
   color: #2b292d;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1400px) {
+  .inbox__text {
+    width: 461px;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
 }
 
 .review {
@@ -571,10 +601,21 @@
   background-blend-mode: overlay, normal;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 4px 6px rgba(0, 0, 0, 0.05), inset 0px 1px 0px rgba(255, 255, 255, 0.1);
 }
+@media screen and (min-width: 1400px) {
+  .review {
+    width: 519px;
+    height: 213px;
+    margin-top: 44px;
+    padding: 30px;
+  }
+}
 .review__description {
   font-size: 20px;
   line-height: 28px;
   color: #2b292d;
+}
+.review__description__mark {
+  font-weight: 700;
 }
 .review__comment {
   display: flex;
@@ -727,10 +768,11 @@
   margin: 22px 0;
 }
 .audience__categories-item-item-text {
-  font-weight: 700;
+  font-weight: bold;
   font-size: 22px;
   line-height: 28px;
   text-align: center;
+  color: #2b292d;
   margin: 22px 20px 33px 20px;
 }
 .audience__categories-item-item-text:last-child {
@@ -1178,7 +1220,7 @@ body {
 }
 @media screen and (min-width: 1400px) {
   .page {
-    width: max- 1400px;
+    width: 1400px;
     margin: auto;
     min-height: 100vh;
     display: flex;
