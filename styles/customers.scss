@@ -3,7 +3,7 @@
     flex-direction: column;
     margin: auto;
     flex-wrap: wrap;
-    width: 100vw;
+    width: 100%;
     @include for-large-up {
         display: flex;
         flex-direction: row;
