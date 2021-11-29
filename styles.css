@@ -833,12 +833,18 @@
   font-size: 24px;
   line-height: 34px;
   text-align: center;
+  margin-top: 18px;
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 1400px) {
   .audience__text {
     width: 555px;
     margin-bottom: 34px;
+    margin-top: 0;
   }
+}
+.audience__actions {
+  width: 100%;
 }
 @media screen and (min-width: 1400px) {
   .audience__actions {
@@ -911,20 +917,113 @@
   color: #ffffff;
   background-color: #3141c5;
 }
-.user-card-item-icon {
+.user-card__icon {
   max-width: 100%;
   margin: 22px 0;
 }
-.user-card-item-text {
-  font-weight: bold;
+.user-card__text {
+  font-weight: 700;
   font-size: 22px;
   line-height: 28px;
   text-align: center;
   color: #2b292d;
   margin: 22px 20px 33px 20px;
 }
-.user-card-item-text:last-child {
+.user-card__text:last-child {
   padding-bottom: 0;
+}
+
+.feedback {
+  padding: 39px 15px 50px 15px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #e3e3e3;
+}
+@media screen and (min-width: 1400px) {
+  .feedback {
+    position: relative;
+    margin: auto;
+    width: 1400px;
+    align-items: center;
+    padding: 0;
+  }
+}
+.feedback__title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #3142c6;
+  margin: 0;
+}
+.feedback__description {
+  font-size: 24px;
+  line-height: 34px;
+  color: #2b292d;
+  margin-top: 29px;
+}
+@media screen and (min-width: 1400px) {
+  .feedback__description {
+    width: 750px;
+    text-align: center;
+    margin-top: 28px;
+  }
+}
+.feedback__autor__info {
+  margin: 32px 0 40px 0;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2b292d;
+}
+@media screen and (min-width: 1400px) {
+  .feedback__autor__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 38px;
+  }
+}
+.feedback__comment__info-name {
+  margin: 0;
+  font-weight: 700;
+}
+.feedback__comment__info-post {
+  opacity: 0.6;
+}
+.feedback__container {
+  display: flex;
+  justify-content: space-between;
+  width: 75px;
+  margin: auto;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 1400px) {
+  .feedback__container {
+    margin-bottom: 66px;
+  }
+}
+.feedback__item {
+  width: 12px;
+  height: 12px;
+  opacity: 0.2;
+  background-color: #2b292d;
+  border: none;
+  cursor: pointer;
+  mix-blend-mode: normal;
+}
+.feedback__item:hover {
+  background-color: #3141c5;
+  opacity: 1;
+}
+.feedback__img {
+  max-width: 100%;
+  margin: auto;
+}
+@media screen and (min-width: 1400px) {
+  .feedback__img {
+    position: absolute;
+    bottom: 0;
+    right: 26px;
+  }
 }
 
 .hiring {
