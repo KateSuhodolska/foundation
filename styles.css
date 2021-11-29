@@ -796,7 +796,7 @@
   .audience {
     width: 1400px;
     margin: auto;
-    padding: 108px 0 0 0;
+    padding: 108px 0 110px 0;
   }
 }
 .audience__subtitle {
@@ -882,7 +882,6 @@
   .audience__categories {
     display: flex;
     justify-content: center;
-    padding-bottom: 110px;
   }
 }
 
