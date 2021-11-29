@@ -15,6 +15,7 @@
     &__img {
         margin: auto;
         max-width: 100%;
+        margin-bottom: 15px;
     }
     &__caption {
         display: none;
@@ -24,6 +25,11 @@
             line-height: 22px;
             text-align: center;
             color: rgba(43, 41, 45, 0.6);
+        }
+    }
+    &__content {
+        @include for-large-up {
+            margin-left: 164px;
         }
     }
     &__subtitle {
